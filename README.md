@@ -31,3 +31,5 @@ F&A-Gestao-Empresarial/
 
 - Email: ilsso.freitas@gmail.com
 - WhatsApp: (27) 99917-3407
+- Instagram: ilsso_freitas
+- Linkedin: https://www.linkedin.com/in/ilsso-freitas-a375701a9/

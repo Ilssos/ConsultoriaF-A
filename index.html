@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria Ilsso Freitas - DP, RH e Gestão de Pessoas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy': '#1e3a8a',
+                        'navy-dark': '#1e40af',
+                        'accent-green': '#10b981',
+                        'accent-orange': '#f97316'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+<!-- Header/Navigation -->
+<nav class="bg-white shadow-sm fixed w-full top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+            <div>
+                <div class="text-2xl font-bold text-navy">F&A Gestão Empresarial</div>
+                <div class="text-sm text-gray-600 font-medium">Consultoria e Gestão de Documentos</div>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-navy transition-colors">Início</a>
+                <a href="#sobre" class="text-gray-700 hover:text-navy transition-colors">Sobre</a>
+                <a href="#consultoria" class="text-gray-700 hover:text-navy transition-colors">Consultoria</a>
+                <a href="#contato" class="text-gray-700 hover:text-navy transition-colors">Contato</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+        <div class="px-4 py-2 space-y-2">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-navy">Início</a>
+            <a href="#sobre" class="block py-2 text-gray-700 hover:text-navy">Sobre</a>
+            <a href="#consultoria" class="block py-2 text-gray-700 hover:text-navy">Consultoria</a>
+            <a href="#contato" class="block py-2 text-gray-700 hover:text-navy">Contato</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="pt-20 pb-16 bg-gradient-to-br from-navy to-navy-dark text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center py-20">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Consultoria em DP, RH e<br>
+                <span class="text-accent-green">Gestão de Pessoas</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 text-blue-100 max-w-4xl mx-auto leading-relaxed">
+                Organização, clareza e estratégia para transformar a gestão de pessoas da sua empresa.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/5527999173407?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20sua%20consultoria" 
+                   target="_blank"
+                   class="bg-accent-green hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 inline-flex items-center justify-center">
+                    <i class="fab fa-whatsapp mr-2"></i>
+                    Fale comigo agora
+                </a>
+                <button onclick="scrollToContact()" 
+                        class="bg-transparent border-2 border-white hover:bg-white hover:text-navy text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all">
+                    Entre em contato
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sobre Section -->
+<section id="sobre" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-navy mb-6">Sobre a Empresa</h2>
+            <div class="w-24 h-1 bg-accent-orange mx-auto mb-8"></div>
+        </div>
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                <p class="text-lg leading-relaxed text-gray-700 mb-6">
+                    A <strong class="text-navy">F&A Gestão Empresarial</strong> nasceu da visão de que empresas precisam de muito mais do que apenas cumprir prazos e entregar documentos: precisam de organização, confiança e segurança para crescer de forma sustentável.
+                </p>
+                <p class="text-lg leading-relaxed text-gray-700 mb-6">
+                    Criada a partir da experiência prática em Departamento Pessoal, Recursos Humanos e Gestão de Documentos, a F&A foi pensada para simplificar processos, dar clareza às rotinas e transformar burocracia em eficiência.
+                </p>
+                <p class="text-lg leading-relaxed text-gray-700 mb-6">
+                    Nosso proprietário, <strong class="text-navy">Ilsso Freitas</strong>, é profissional com mais de 10 anos de experiência em Recursos Humanos e Administração, com sólida atuação em gestão de equipes, processos trabalhistas e sistemas SAP. Ao longo de sua trajetória, contribuiu com grandes empresas como <strong class="text-navy">Vale SA, VLI, Samarco, Sylvamo, Nassau e Simec</strong>.
+                </p>
+                <div class="bg-gray-50 rounded-lg p-6 mb-6">
+                    <h4 class="font-semibold text-navy mb-3">Formação do Proprietário</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div class="flex items-center">
+                            <i class="fas fa-graduation-cap text-accent-green mr-2"></i>
+                            <span>Bacharel em Direito</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-certificate text-accent-orange mr-2"></i>
+                            <span>Pós em Gestão de Pessoas e DP</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-hard-hat text-navy mr-2"></i>
+                            <span>Técnico em Segurança do Trabalho</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-lg leading-relaxed text-gray-700 mb-6">
+                    Nosso propósito é apoiar empresas de diferentes segmentos, oferecendo soluções em <strong class="text-accent-green">gestão de pessoas, documentação e compliance trabalhista</strong>, sempre com seriedade, ética e inovação.
+                </p>
+                <p class="text-lg leading-relaxed text-gray-700">
+                    Acreditamos que a boa gestão começa com pessoas, se fortalece com processos claros e se consolida com documentos organizados. Por isso, cada serviço da F&A é desenhado para gerar <span class="text-accent-green font-semibold">tranquilidade, confiança e resultados reais</span> para nossos clientes.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Consultoria Section -->
+<section id="consultoria" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-navy mb-6">Como posso ajudar você e sua empresa</h2>
+            <div class="w-24 h-1 bg-accent-green mx-auto mb-8"></div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+                <div class="flex items-center mb-6">
+                    <div class="bg-navy text-white p-3 rounded-lg mr-4">
+                        <i class="fas fa-users text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-navy">Departamento Pessoal</h3>
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                    Admissões, demissões, folha de pagamento e encargos com total conformidade legal.
+                </p>
+            </div>
+            
+            <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+                <div class="flex items-center mb-6">
+                    <div class="bg-accent-green text-white p-3 rounded-lg mr-4">
+                        <i class="fas fa-handshake text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-navy">Recursos Humanos</h3>
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                    Recrutamento, seleção e desenvolvimento de pessoas para potencializar sua equipe.
+                </p>
+            </div>
+            
+            <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+                <div class="flex items-center mb-6">
+                    <div class="bg-accent-orange text-white p-3 rounded-lg mr-4">
+                        <i class="fas fa-building text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-navy">Gestão de Terceiros</h3>
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                    Processos de admissão, documentação e conformidade legal para terceirizados.
+                </p>
+            </div>
+            
+            <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+                <div class="flex items-center mb-6">
+                    <div class="bg-navy text-white p-3 rounded-lg mr-4">
+                        <i class="fas fa-balance-scale text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-navy">Orientação Trabalhista</h3>
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                    Suporte especializado em legislação e direitos trabalhistas.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contato Section -->
+<section id="contato" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-navy mb-6">Entre em contato comigo</h2>
+            <div class="w-24 h-1 bg-accent-orange mx-auto mb-8"></div>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                Quer falar comigo? Entre em contato por algum dos meios abaixo.
+            </p>
+        </div>
+        <div class="max-w-4xl mx-auto space-y-6">
+            <!-- Contatos Diretos -->
+            <div class="flex items-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                <div class="bg-accent-green text-white p-3 rounded-lg mr-4">
+                    <i class="fas fa-envelope text-xl"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-navy">Email</h4>
+                    <a href="mailto:ilsso.freitas@gmail.com?subject=Consultoria F&A Gestão Empresarial&body=Olá, gostaria de mais informações sobre sua consultoria." class="text-gray-700 hover:text-accent-green">
+                        ilsso.freitas@gmail.com
+                    </a>
+                </div>
+            </div>
+            
+            <div class="flex items-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                <div class="bg-accent-green text-white p-3 rounded-lg mr-4">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                </div>
+                <div class="flex-1">
+                    <h4 class="font-semibold text-navy">WhatsApp</h4>
+                    <p class="text-gray-700 mb-2">(27) 99917-3407</p>
+                    <a href="https://wa.me/5527999173407?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informações%20sobre%20sua%20consultoria" target="_blank" class="text-accent-green hover:underline">
+                        Clique aqui para iniciar o WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-navy text-white py-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+        &copy; 2025 F&A Gestão Empresarial. Todos os direitos reservados.
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
